@@ -31,7 +31,7 @@ The program will run **nslookup** on five IP addresses of DNS servers from the H
 
 **Compilation requirements**
 
-golang version 1.23. More information about installation: [go.dev/doc/install](https://go.dev/doc/install)
+golang version 1.18 and higher. More information about installation: [go.dev/doc/install](https://go.dev/doc/install)
 
 **Compilation**
 ```
