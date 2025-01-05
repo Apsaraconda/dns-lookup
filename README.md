@@ -23,17 +23,17 @@ If no flag is selected, the program is executed by default against DNS servers i
 | -c [number] | Specifies the number of IP addresses to run **nslookup** on. Only results without errors are counted. The allowed value is from 1 to 1000000. The value 0 means no flag. |
 | -h, --help | Show "Help and information about the program" and exit |
 
-**Usage example**
+**Usage example:**
 ```
 ./dns-lookup -d -k -c 5 example.com
 ```
 The program will run **nslookup** on five IP addresses of DNS servers from the Hong Kong list, then Germany, counting from the beginning of each list. The established run order is: Hong Kong, USA, Germany.
 
-**Compilation requirements**
+**Compilation requirements:**
 
 golang version 1.18 and higher. More information about installation: [go.dev/doc/install](https://go.dev/doc/install)
 
-**Compilation**
+**Compilation:**
 ```
 go build dns-lookup.go
 ```
