@@ -12,7 +12,10 @@ or
 ./dns-lookup [domain]
 ```
 If no flag is selected, the program is executed by default against DNS servers in Hong Kong.
-
+*Note:* On Windows, the terminal may use CP866 encoding by default, so before launching it is recommended to set the terminal encoding to UTF-8 by entering the command:
+```
+chcp 65001
+```
 **Parameters (flags):**
 
 | Flag | Description |
