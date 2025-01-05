@@ -27,7 +27,7 @@ If no flag is selected, the program is executed by default against DNS servers i
 ```
 ./dns-lookup -d -k -c 5 example.com
 ```
-The program will run nslookup on five IP addresses of DNS servers from the Hong Kong list, then Germany, counting from the beginning of each list. The established run order is: Hong Kong, USA, Germany.
+The program will run **nslookup** on five IP addresses of DNS servers from the Hong Kong list, then Germany, counting from the beginning of each list. The established run order is: Hong Kong, USA, Germany.
 
 **Compilation requirements**
 
