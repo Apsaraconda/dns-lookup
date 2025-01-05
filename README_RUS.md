@@ -32,7 +32,7 @@
 
 **Требования для компиляции**
 
-golang версии 1.23. Подробнее об установке: [go.dev/doc/install](https://go.dev/doc/install)
+golang версии 1.18 и выше. Подробнее об установке: [go.dev/doc/install](https://go.dev/doc/install)
 
 **Компиляция**
 ```
