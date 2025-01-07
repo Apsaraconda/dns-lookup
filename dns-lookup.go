@@ -12,8 +12,15 @@ import (
 	"regexp"
 )
 
+const UTF8BOM = "\ufeff"
+
 type DNSRecord struct {
 	IP string `json:"ip"`
+}
+
+func addBOM() {
+	// Добавление BOM в начало вывода
+	fmt.Print(UTF8BOM)
 }
 
 type Flags struct {
@@ -157,6 +164,8 @@ func validateDomain(domain string) bool {
 }
 
 func main() {
+	// Добавляем BOM, чтобы текстовые редакторы корректно распознавали UTF-8
+	addBOM()
 	flags, domain := parseFlags()
 
 	if flags.flagK {
